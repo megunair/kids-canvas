@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kid's Canvas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="A simple web-based drawing app for children without access to art supplies">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>Kid's Canvas</h1>
+        </div>
+        
+        <div class="content">
+            <div class="toolbar">
+                <div class="tool active" id="pencil-tool" title="Pencil">
+                    <img src="images/pencil.svg" alt="Pencil">
+                </div>
+                <div class="tool" id="eraser-tool" title="Eraser">
+                    <img src="images/eraser.svg" alt="Eraser">
+                </div>
+                <div class="tool" id="shape-tool" title="Circle Shape">
+                    <img src="images/circle.svg" alt="Shape">
+                </div>
+                
+                <div class="size-controls">
+                    <div class="tool size small" data-size="5" title="Small Brush"></div>
+                    <div class="tool size medium active" data-size="10" title="Medium Brush"></div>
+                    <div class="tool size large" data-size="20" title="Large Brush"></div>
+                </div>
+                
+                <div class="colors">
+                    <div class="color active" style="background-color: #ff0000;" data-color="#ff0000" title="Red"></div>
+                    <div class="color" style="background-color: #ff9900;" data-color="#ff9900" title="Orange"></div>
+                    <div class="color" style="background-color: #ffff00;" data-color="#ffff00" title="Yellow"></div>
+                    <div class="color" style="background-color: #33cc33;" data-color="#33cc33" title="Green"></div>
+                    <div class="color" style="background-color: #3366ff;" data-color="#3366ff" title="Blue"></div>
+                    <div class="color" style="background-color: #9900cc;" data-color="#9900cc" title="Purple"></div>
+                    <div class="color" style="background-color: #ff66cc;" data-color="#ff66cc" title="Pink"></div>
+                    <div class="color" style="background-color: #663300;" data-color="#663300" title="Brown"></div>
+                    <div class="color" style="background-color: #000000;" data-color="#000000" title="Black"></div>
+                </div>
+            </div>
+            
+            <div class="canvas-container">
+                <canvas id="drawing-canvas"></canvas>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button class="action-button" id="save-button">Save</button>
+            <button class="action-button" id="clear-button">Clear</button>
+            <button class="action-button" id="magic-button">Make Magic!</button>
+        </div>
+    </div>
+    
+    <div class="modal" id="clear-modal">
+        <div class="modal-content">
+            <h2>Clear your drawing?</h2>
+            <p>Are you sure you want to erase everything?</p>
+            <div class="modal-buttons">
+                <button class="action-button" id="clear-yes">Yes</button>
+                <button class="action-button" id="clear-no">No</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="save-modal">
+        <div class="modal-content">
+            <h2>Your drawing is saved!</h2>
+            <p>You can find it in your gallery.</p>
+            <div class="modal-buttons">
+                <button class="action-button" id="save-ok">OK</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="magic-modal">
+        <div class="modal-content">
+            <h2>Making Magic...</h2>
+            <p>Our friendly robot is turning your drawing into a beautiful picture!</p>
+            <div id="magic-progress" style="width: 100%; height: 20px; background-color: #eee; border-radius: 10px; margin-top: 20px;">
+                <div style="width: 0%; height: 100%; background-color: #ff9900; border-radius: 10px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
