@@ -1,0 +1,86 @@
+# Kid's Canvas - Essential Test Script (5 Tests)
+
+## Introduction
+This document contains 5 essential tests for Kid's Canvas that cover the core functionality. Complete each test by following the step-by-step instructions and record your results.
+
+## Test Environment
+- Browser: [Chrome, Firefox, Safari, etc.]
+- Device: [Desktop, tablet, mobile]
+- Date of testing: _______________
+- Tester name: _______________
+
+## Test Results Key
+- ✓ = PASS (Behaves as expected)
+- ✗ = FAIL (Does not behave as expected)
+
+## Core Functionality Tests
+
+### Test 1: Basic Drawing and Erasing
+Steps:
+1. Open Kid's Canvas
+2. Draw several lines on the canvas using the pencil tool
+3. Switch to the eraser tool
+4. Erase part of your drawing
+
+Expected Result: Lines should appear when drawing and disappear where erased. The eraser should only remove content where you drag it.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+### Test 2: Color and Size Selection
+Steps:
+1. Select a red color from the palette
+2. Draw a line
+3. Change to a blue color
+4. Draw another line
+5. Change to a larger brush size
+6. Draw a third line
+
+Expected Result: The first line should be red, the second line blue, and the third line should be blue but noticeably thicker than the previous lines.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+### Test 3: Shape Tool Functionality
+Steps:
+1. Select the circle shape tool
+2. Click and drag on the canvas to create a circle
+3. Select a different color
+4. Create another circle
+
+Expected Result: You should be able to create circles of different sizes and colors. The circles should appear as outlines (not filled).
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+### Test 4: Clear Canvas Function
+Steps:
+1. Create a drawing with multiple elements
+2. Click the "Clear" button
+3. Confirm the clear operation
+
+Expected Result: The entire canvas should be cleared, removing all drawn elements.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+### Test 5: Magic Transform Feature
+Steps:
+1. Create a simple drawing
+2. Click the "Make Magic!" button
+3. Wait for the progress bar to complete
+
+Expected Result: The Magic button should trigger an animation with a progress bar. After completion, some kind of effect or transformation should be applied to the drawing.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Summary of Results
+Total tests: 5
+Passed: _____
+Failed: _____
+
+## Additional Notes
+_________________________________________________________________
+_________________________________________________________________
+_________________________________________________________________
