@@ -1,0 +1,228 @@
+# Kid's Canvas - Manual Test Script
+
+## Introduction
+This document provides step-by-step instructions for manually testing the Kid's Canvas drawing application. Each test includes specific steps to follow and the expected results. Simply work through each test case, checking whether the actual behavior matches the expected result.
+
+## Test Environment
+- Browser: [Chrome, Firefox, Safari, etc.]
+- Device: [Desktop, tablet, mobile]
+- Screen size: [e.g., 1920x1080]
+- Date of testing: _______________
+- Tester name: _______________
+
+## Test Results Key
+- ✓ = PASS (Behaves as expected)
+- ✗ = FAIL (Does not behave as expected)
+- N/A = Not tested
+
+## Basic Drawing Tests
+
+### Test 1: Basic Pencil Drawing
+Steps:
+1. Open Kid's Canvas
+2. Ensure pencil tool is selected (default)
+3. Click and drag on the canvas in any pattern
+
+Expected Result: A line should appear on the canvas following exactly where you moved the mouse.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+### Test 2: Drawing with Different Colors
+Steps:
+1. Click on a blue color in the color palette
+2. Draw a line on the canvas
+3. Click on a red color in the color palette
+4. Draw another line on the canvas
+
+Expected Result: The first line should be blue, and the second line should be red.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+### Test 3: Drawing with Different Brush Sizes
+Steps:
+1. Select the small brush size
+2. Draw a line on the canvas
+3. Select the medium brush size
+4. Draw another line on the canvas
+5. Select the large brush size
+6. Draw a third line on the canvas
+
+Expected Result: Each line should have a different thickness, with the first being the thinnest and the third being the thickest.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Eraser Tool Tests
+
+### Test 4: Basic Eraser Functionality
+Steps:
+1. Draw something on the canvas using the pencil tool
+2. Click on the eraser tool
+3. Click and drag over the drawn content
+
+Expected Result: The content should be erased wherever you dragged the eraser.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+### Test 5: Eraser Size Adjustment
+Steps:
+1. Draw a thick line on the canvas using the pencil tool
+2. Click on the eraser tool
+3. Change to the large eraser size
+4. Erase part of the drawing
+
+Expected Result: The eraser should remove content in a wider path corresponding to the selected size.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Shape Tool Tests
+
+### Test 6: Circle Shape Tool
+Steps:
+1. Click on the circle shape tool
+2. Click on the canvas and hold down the mouse button
+3. Drag outward to set the size of the circle
+4. Release the mouse button
+
+Expected Result: A circle should be drawn with its center at your initial click point and its radius determined by how far you dragged.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+### Test 7: Shape Color Selection
+Steps:
+1. Select a green color from the color palette
+2. Click on the circle shape tool
+3. Draw a circle on the canvas
+4. Select a yellow color
+5. Draw another circle
+
+Expected Result: The first circle should be green, and the second circle should be yellow.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Color Selection Tests
+
+### Test 8: Color Palette Selection
+Steps:
+1. Click on each color in the color palette one at a time
+2. After each selection, draw a short line on the canvas
+
+Expected Result: Each line should match the color that was selected before drawing.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Clear Canvas Tests
+
+### Test 9: Clear Canvas Functionality
+Steps:
+1. Draw several shapes or lines on the canvas
+2. Click the "Clear" button
+3. When prompted, confirm that you want to clear the canvas
+
+Expected Result: The canvas should be completely cleared of all drawings.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+### Test 10: Cancel Clear Canvas Action
+Steps:
+1. Draw several shapes or lines on the canvas
+2. Click the "Clear" button
+3. When prompted, select "No" or "Cancel"
+
+Expected Result: The canvas should remain unchanged with all your drawings still visible.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Save Functionality Tests
+
+### Test 11: Save Drawing Functionality
+Steps:
+1. Create a drawing on the canvas
+2. Click the "Save" button
+3. Observe what happens
+
+Expected Result: A confirmation message should appear indicating the drawing has been saved.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Magic Transform Tests
+
+### Test 12: Magic Transform Button
+Steps:
+1. Create a simple drawing on the canvas
+2. Click the "Make Magic!" button
+3. Observe what happens
+
+Expected Result: A progress bar should appear, and eventually some transformation effect should be applied to your drawing.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Responsive Design Tests
+
+### Test 13: Canvas Resize on Window Resize
+Steps:
+1. Draw something on the canvas
+2. Resize your browser window to be smaller
+3. Resize it back to the original size
+
+Expected Result: The canvas should resize with the window while maintaining your drawing.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Touch Device Tests (if applicable)
+
+### Test 14: Touch Drawing
+Steps:
+1. Open Kid's Canvas on a touch device (smartphone or tablet)
+2. Draw on the canvas using your finger or a stylus
+
+Expected Result: Drawing should work as expected with touch input.
+
+Result: [ ] PASS [ ] FAIL [ ] N/A
+Notes: _______________
+
+## Edge Cases
+
+### Test 15: Drawing Outside Canvas Bounds
+Steps:
+1. Start drawing on the canvas
+2. While holding the mouse button, move the cursor outside the canvas area
+3. Move back into the canvas area while still holding the mouse button
+
+Expected Result: Drawing should pause when outside the canvas and resume when returning to the canvas.
+
+Result: [ ] PASS [ ] FAIL
+Notes: _______________
+
+## Bug Reporting
+If you find a bug during testing, please record the following information:
+
+1. Test case number and name
+2. Detailed description of the issue
+3. Steps to reproduce
+4. Actual result vs. expected result
+5. Screenshot (if possible)
+6. Any error messages that appeared
+
+## Summary of Results
+Total tests: 15
+Passed: _____
+Failed: _____
+Not tested: _____
+
+## Additional Notes
+_________________________________________________________________
+_________________________________________________________________
+_________________________________________________________________
