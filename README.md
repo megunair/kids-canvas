@@ -6,6 +6,10 @@ A simple web-based drawing application designed for children without access to t
 
 Kid's Canvas provides an intuitive, age-appropriate interface with basic drawing tools that allow children to express their creativity digitally. The application is specifically designed to be accessible on a wide range of devices, with minimal system requirements and a focus on simplicity.
 
+## 🚀 Live Demo
+
+Visit the live application at: https://megunair.github.io/kids-canvas/
+
 ## Features
 
 - Simple, full-screen drawing canvas
@@ -23,9 +27,19 @@ Future development will include AI integration to transform children's digital s
 
 ## Getting Started
 
+### Running Locally
 1. Clone this repository
 2. Open `index.html` in any modern web browser
 3. Start drawing!
+
+### Deployment
+This project is automatically deployed to GitHub Pages when changes are pushed to the main branch. The GitHub Actions workflow in `.github/workflows/deploy.yml` handles the deployment process.
+
+To deploy your own version:
+1. Fork this repository
+2. Enable GitHub Pages in your repository settings
+3. Select "GitHub Actions" as the source
+4. Your site will be available at `https://[your-username].github.io/kids-canvas/`
 
 ## Technical Details
 
